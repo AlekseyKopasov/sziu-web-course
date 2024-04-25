@@ -37,6 +37,30 @@ body {
   padding: 15px 24px;
 }
 
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.main-nav__item {
+  margin-right: 43px;
+}
+
+.main-nav__item:last-child {
+  margin-right: 0;
+}
+
+.main-nav__link {
+  padding: 5px 0;
+  color: #f0dfdf;
+  text-decoration: none;
+}
+
 .main {
   flex-grow: 1;
 }
