@@ -88,6 +88,51 @@ body {
   background-color: #f7f9ff;
 }
 
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar__img {
+  max-width: 130px;
+  max-height: 130px;
+  width: 100%;
+  height: auto;
+
+  margin-right: 24px;
+
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.user-details {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.user-details__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-right: 16px;
+}
+
+.user-details__item:last-child {
+  margin-right: 0;
+}
+
 .page-skills {
   margin-bottom: 0;
 }
