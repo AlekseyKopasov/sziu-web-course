@@ -1,6 +1,10 @@
 @import url('fonts.css');
+@import url('normalize.css');
 
 
-* {
+body {
   font-family: 'Roboto', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #272727;
 }
