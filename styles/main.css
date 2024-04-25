@@ -157,6 +157,21 @@ body {
   margin-bottom: 0;
 }
 
+.page-skills__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-skills__inner-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .footer {
   padding: 15px 24px;
   background-color: #000000;
