@@ -26,8 +26,15 @@ body {
 }
 
 .header {
+  background-color: #760808;
+}
+
+.header__wrapper {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+
+  padding: 15px 24px;
 }
 
 .main {
