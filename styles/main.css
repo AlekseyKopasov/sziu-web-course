@@ -26,7 +26,8 @@ body {
 }
 
 .header {
-  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
 }
 
 .main {
