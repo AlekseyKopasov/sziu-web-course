@@ -133,6 +133,26 @@ body {
   margin-right: 0;
 }
 
+.page-content {
+  display: flex;
+}
+
+.history,
+.targets {
+  width: 50%;
+}
+
+.history {
+  margin-right: 36px;
+}
+
+.targets,
+.targets ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .page-skills {
   margin-bottom: 0;
 }
