@@ -74,5 +74,6 @@ body {
 }
 
 .footer {
-  background-color: tomato;
+  padding: 15px 24px;
+  background-color: #000000;
 }
