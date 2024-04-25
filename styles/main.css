@@ -37,6 +37,10 @@ body {
   padding: 15px 24px;
 }
 
+.logo {
+  margin-right: 66px;
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
@@ -59,6 +63,10 @@ body {
   padding: 5px 0;
   color: #f0dfdf;
   text-decoration: none;
+}
+
+.logout {
+  margin-left: auto;
 }
 
 .main {
