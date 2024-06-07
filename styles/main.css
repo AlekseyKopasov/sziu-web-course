@@ -68,6 +68,30 @@ body {
   padding: 5px 0;
   color: #f0dfdf;
   text-decoration: none;
+
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.main-nav__link:hover {
+  /* навели на элемент */
+  color: #5496da;
+}
+
+.main-nav__link:focus {
+  /* на элемент нажали и отпустили */
+  opacity: 0.6;
+}
+.main-nav__link:focus:hover {
+  opacity: 1;
+}
+
+.main-nav__link:active {
+  /* на элемент нажали */
+  color: #f0dfdf;
+}
+
+.main-nav__link:focus-visible {
+  /* элемент в фокусе, например, во время навигации с помощью клавиатуры */
 }
 
 .logout {
@@ -78,6 +102,25 @@ body {
   color: #f0dfdf;
 
   cursor: pointer;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.logout:hover {
+  /* навели на элемент */
+  color: #5496da;
+}
+
+.logout:focus {
+  /* на элемент нажали и отпустили */
+  opacity: 0.6;
+}
+.logout:focus:hover {
+  opacity: 1;
+}
+
+.logout:active {
+  /* на элемент нажали */
+  color: #f0dfdf;
 }
 
 .main {
@@ -196,9 +239,33 @@ body {
   line-height: 1.2;
   color: #ffffff;
   background-color: #760808;
-  border: none;
+  border: 1px solid transparent;
 
   cursor: pointer;
+  transition: opacity 0.3s ease, color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.order-btn:hover {
+  /* навели на элемент */
+  color: #760808;
+  background-color: #ffffff;
+  border-color: #760808;
+}
+
+.order-btn:focus {
+  /* на элемент нажали и отпустили */
+  border-color: #272727;
+  background-color: rgba(118, 8, 8, 0.8);
+}
+.order-btn:focus:hover {
+  background-color: #760808;
+  border-color: transparent;
+  color: #ffffff;
+}
+
+.order-btn:active {
+  /* на элемент нажали */
+  opacity: 0.6;
 }
 
 .targets,
@@ -402,6 +469,7 @@ body {
 
   opacity: 0;
   visibility: hidden;
+  display: none;
 
   width: 100vw;
   height: 100vh;
@@ -410,6 +478,7 @@ body {
 }
 
 .modal.is-active {
+  display: flex;
   opacity: 1;
   visibility: visible;
 }
@@ -463,8 +532,32 @@ body {
   background-color: transparent;
   border: none;
   padding: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #272727;
 
   cursor: pointer;
+
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.modal__close:hover {
+  /* навели на элемент */
+  color: #760808;
+}
+
+.modal__close:focus {
+  /* на элемент нажали и отпустили */
+  opacity: 0.8;
+}
+.modal__close:focus:hover {
+  opacity: 1;
+}
+
+.modal__close:active {
+  color: #272727;
 }
 
 .modal__form {
@@ -503,6 +596,19 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #000000;
+
+  cursor: pointer;
+
+  transition: border-color 0.3s ease;
+}
+
+.modal__input:hover {
+  border-color: #000000;
+}
+
+.modal__input:focus {
+  border-color: #039ef9;
+  outline: none;
 }
 
 .modal__send {
@@ -515,6 +621,31 @@ body {
   line-height: 1.2;
   color: #ffffff;
 
-  border: none;
+  border: 1px solid transparent;
   background-color: #760808;
+
+  transition: opacity 0.3s ease, color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.modal__send:hover {
+  /* навели на элемент */
+  color: #760808;
+  background-color: #ffffff;
+  border-color: #760808;
+}
+
+.modal__send:focus {
+  /* на элемент нажали и отпустили */
+  border-color: #272727;
+  background-color: rgba(118, 8, 8, 0.8);
+}
+.modal__send:focus:hover {
+  background-color: #760808;
+  border-color: transparent;
+  color: #ffffff;
+}
+
+.modal__send:active {
+  /* на элемент нажали */
+  opacity: 0.6;
 }
