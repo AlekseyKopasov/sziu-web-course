@@ -96,7 +96,7 @@ body {
 
 .page-header,
 .page-content,
-.page-skills {
+.tools {
   margin-bottom: 24px;
   padding: 24px;
 
@@ -184,6 +184,24 @@ body {
   margin-right: 36px;
 }
 
+.order-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 40px;
+  padding: 11px 26px;
+
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #ffffff;
+  background-color: #760808;
+  border: none;
+
+  cursor: pointer;
+}
+
 .targets,
 .targets ul {
   margin: 0;
@@ -239,11 +257,11 @@ body {
   background-color: #272727;
 }
 
-.page-skills {
+.tools {
   margin-bottom: 0;
 }
 
-.page-skills__list {
+.tools__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -252,10 +270,88 @@ body {
   justify-content: space-between;
 }
 
-.page-skills__inner-list {
+.tools__inner-list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.tools__inner-list li {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 8px;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1;
+  color: #272727;
+  }
+
+.tools__inner-list li:last-child {
+  margin-bottom: 0;
+}
+
+.tools__inner-list--statuses {
+  text-transform: lowercase;
+}
+
+.status {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.status--success {
+  background-color: #d9edd0;
+}
+
+.status--danger {
+  background-color: #f8d0d0;
+}
+
+.tools__inner-list--tools li {
+  position: relative;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 6px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.tools__inner-list--tools li::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 14px;
+
+  margin-top: 13px;
+
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+  background-color: #272727;
+}
+
+.tools__inner-list--tools svg {
+  margin-left: 10px;
+}
+
+.tools-status {
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.tools-status--ofter {
+  background-color: #d9edd0;
+}
+
+.tools-status--rarely {
+  background-color: #f8d0d0;
 }
 
 .footer {
@@ -280,6 +376,10 @@ body {
 .title svg {
   margin-right: 6px;
   flex-shrink: 0;
+}
+
+.title--tool-period {
+  text-transform: lowercase;
 }
 
 .text {
