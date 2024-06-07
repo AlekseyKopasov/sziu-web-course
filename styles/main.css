@@ -44,6 +44,7 @@ body {
 
 .logo {
   margin-right: 66px;
+  color: #f0dfdf;
 }
 
 .main-nav__list {
@@ -71,7 +72,13 @@ body {
 }
 
 .logout {
+  background-color: transparent;
+  border: none;
+  padding: 5px 0;
   margin-left: auto;
+  color: #f0dfdf;
+
+  cursor: pointer;
 }
 
 .main {
@@ -80,7 +87,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  max-width: 977px;
+  max-width: 1024px;
 
   margin: 0 auto;
   padding: 24px;
