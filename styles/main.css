@@ -462,25 +462,27 @@ body {
 
 .modal {
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
 
-  transform: translate3d(-50%, -50%, 0);
+  transform: scale(1.2);
 
   opacity: 0;
   visibility: hidden;
-  display: none;
+  pointer-events: none;
 
   width: 100vw;
   height: 100vh;
 
-  transition: opacity 0.6s ease-in, visibility 0.6s ease-in;
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in, visibility 0.3s ease-in;
 }
 
 .modal.is-active {
-  display: flex;
-  opacity: 1;
   visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+
+  pointer-events: auto;
 }
 
 .modal__overlay {
